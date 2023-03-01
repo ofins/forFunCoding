@@ -19,9 +19,9 @@ function run() {
     }
 }
 
-//show checks whenever a condition is met
-function runTwo() {
+//show checks whenever a condition is met 
 
+password.addEventListener('keyup', function(){
 let capturedPass = password.value
 
 //first condition
@@ -48,7 +48,14 @@ if(resultThree) {
 } else {
     check3.classList.remove("show-check")
 }
+
+//if input box is empty, clear color
+if(capturedPass === "") {
+    password.classList.remove("redlight")
+    password.classList.remove("greenlight")
 }
+})
+
 
 //hitting the ENTER button will also check
 function control(e) {
