@@ -1,0 +1,92 @@
+:root {
+    --border-radius: 8px;
+    --transition: all 0.2s linear;
+    
+    --color1: #669999;
+    --color2: #666699;
+    --color3: #663399;
+    --color4: #660099;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size:1.3rem;
+}
+
+.fa-check {
+    color:rgb(62, 238, 62);
+    margin-left:3px;
+    visibility:hidden;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background: url(/image/background-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.outerbox {
+    background-color: ghostwhite;
+    padding:80px 20px 80px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px white;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.input-center {
+    margin:50px auto;
+    text-align: center;
+}
+
+.input-box {
+    width:300px;
+    height:30px;
+    border-radius: var(--border-radius);
+    font-size:20px;
+    letter-spacing: 3px;
+    padding:0 10px 0 10px;
+}
+
+#check {
+    height:30px;
+    width:70px;
+    border-radius: var(--border-radius);
+    background-color: var(--color3);
+    transition: var(--transition);
+}
+
+#check:hover {
+    cursor:pointer;
+    transform:scale(1.1);
+    background-color: white;
+}
+
+#check:active {
+    transform:translateZ(5px)
+}
+
+.greenlight {
+    background-color: green;
+}
+
+.redlight {
+    background-color: red;
+}
+
+.show-check {
+    visibility:visible;
+}
+
