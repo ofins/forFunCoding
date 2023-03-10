@@ -1,0 +1,71 @@
+:root {
+    --keyword-color1:rgb(197, 31, 31);
+    --examples-color1:rgb(41, 41, 151);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+html {
+    font-family: 'prompt',monospace;
+}
+
+main {
+    padding: 25px;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+    border:1px solid white;
+}
+
+.table {
+    letter-spacing: 1px;
+}
+
+th {
+    height:70px;
+}
+
+td {
+    border: 1px solid black;
+    padding:10px;
+}
+
+.keyword{
+    width:200px;
+    color:var(--keyword-color1);
+    font-weight:bold;
+}
+
+.description{
+    width:700px;
+}
+
+.examples {
+    color:var(--examples-color1);
+}
+
+.HLkeyword {
+    color:var(--keyword-color1)
+}
+
+/*search box */
+.search {
+    text-align: center;
+}
+
+#search {
+    width:35%;
+    height:30px;
+    font-weight:bold;
+    font-size:1.5rem;
+    letter-spacing: 3px;
+}
+
+::placeholder {
+    color:rgb(194, 187, 187);
+    font-size:1rem
+}
